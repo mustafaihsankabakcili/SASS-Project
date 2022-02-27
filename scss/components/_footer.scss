@@ -40,3 +40,18 @@ footer.vertical {
         transform: rotate(90deg) translate(-3rem, -5rem);
     }
 }
+
+footer.middle {
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translate(-50%);
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    @extend .link-style;
+}
