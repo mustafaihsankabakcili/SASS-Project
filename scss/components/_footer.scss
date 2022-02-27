@@ -1,0 +1,42 @@
+.link-style {
+    a {
+        padding: 0.4rem;
+        @include transition(1s);
+    }
+    a:hover {
+        color: $secondaryColor;
+    }
+}
+
+footer.horizontal {
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+    @extend .link-style;
+}
+
+footer.vertical {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    @extend .link-style;
+    .social-icons {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 1rem;
+        left: 1rem;
+        @extend .link-style;
+    }
+    .copyright {
+        display: flex;
+        position: fixed;
+        bottom: 2rem;
+        right: 3rem;
+        transform: rotate(90deg) translate(-3rem, -5rem);
+    }
+}

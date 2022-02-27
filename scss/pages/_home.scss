@@ -1,0 +1,21 @@
+.home-bgImage-container {
+    @include bgImage(100vh, $mainBgImagePath);
+}
+
+.home {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &__name {
+        font-size: 5rem;
+        padding-bottom: 1rem;
+        margin-bottom: 1rem;
+        border-bottom: 2px solid #FFFFFF;
+        &--last {
+            color: $secondaryColor;
+            font-weight: 700;
+        }
+    }
+}

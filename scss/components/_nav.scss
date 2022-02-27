@@ -7,16 +7,14 @@
     &__item {
         display: inline;
         padding: 1rem;
-        ;
     }
     &__link {
         font-size: 1rem;
         text-transform: uppercase;
         font-weight: 500;
-        text-decoration: none;
         @include transition(1s);
         &:hover {
-            color: blue;
+            color: #FFBD35;
         }
         &--active {
             color: $secondaryColor;
